@@ -1,30 +1,36 @@
+<p align="center"><img src=".github/banner.svg" alt="Stich Portfolio" width="100%"></p>
+
 <div align="center">
 
-# 🎨 Stich Portfolio
-
-**Сайт-портфолио Константина Львова: боты, веб-приложения, видео Stich Production и уроки английского**
-
-[![Сайт](https://img.shields.io/badge/сайт-открыть-e5322d?style=flat-square)](https://stich-135-106-163-67.sslip.io)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white)
+[![Сайт](https://img.shields.io/badge/сайт-открыть-e5322d?style=for-the-badge)](https://stich-135-106-163-67.sslip.io)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=for-the-badge&logo=caddy&logoColor=white)
 
 </div>
 
 Личный сайт с собственным маскотом: разделы «Главная», «Проекты», «Галерея», «Обо мне» и «Контакты». Весь текст и картинки правятся прямо на сайте во встроенном режиме редактора, без правки кода.
 
-## ✨ Возможности
+<p align="center">
+  <img src="dist/mascot/juggle.webp" alt="маскот" height="150">
+  <img src="dist/mascot/pencil.webp" alt="маскот" height="150">
+  <img src="dist/mascot/swatch.webp" alt="маскот" height="150">
+  <img src="dist/mascot/apps.webp" alt="маскот" height="150">
+  <img src="dist/mascot/thumbs.webp" alt="маскот" height="150">
+</p>
+
+## 🟦 Что умеет
 
 - **Режим редактора:** вход по паролю, правка контента и загрузка картинок прямо на страницах
 - **Маскот** — свой персонаж в разных позах на каждом разделе
 - **Форма связи:** сообщения с сайта приходят в Telegram
 - **AI-мини-чат** в футере ([stich-ai-chat](https://github.com/lvovkonstantin57-del/stich-ai-chat)) с админкой для ключа
 - **Безопасность:** пароль хранится только как хэш PBKDF2, сессии подписаны HMAC, лимиты запросов, cookie `Secure` на HTTPS
-- **Картинки:** при загрузке поворачиваются по EXIF, уменьшаются до 2000 px и очищаются от метаданных (Pillow)
+- **Картинки:** при загрузке поворачиваются по EXIF, уменьшаются до 2000 px и сохраняются в WebP без метаданных (Pillow)
 
-## 🧱 Устройство
+## 🟨 Как устроено
 
 ```
 server/                 бэкенд на FastAPI
@@ -46,7 +52,7 @@ dist/                   собранный фронтенд (React + Vite), ег
 
 > **Про фронтенд.** В репозитории лежит собранная версия (`dist/`) — ровно то, что сейчас работает на сайте. Исходники React-компонентов в этот репозиторий не попали.
 
-## 🚀 Запуск
+## 🟥 Запуск
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate
